@@ -1,0 +1,9 @@
+---
+- name: Manage boot configurations in iDRAC
+  hosts: idrac
+  gather_facts: false
+  vars_files:
+    - ../vars_files/credentials.yml
+  roles:
+    - dellemc.openmanage.idrac_boot
+
