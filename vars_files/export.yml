@@ -1,8 +1,8 @@
 share_parameters:
   share_name: "{{ share_name }}"
-  share_user: "{{ username }}"
-  share_password: "{{ password }}"
-  scp_file: "{{ filename }}"
+  share_user: "{{ share_username }}"
+  share_password: "{{ share_password }}"
+  scp_file: "{{ share_filename }}"
   proxy_support: false
   proxy_server: ""
   proxy_port: ""
