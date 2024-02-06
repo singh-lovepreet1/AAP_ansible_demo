@@ -4,8 +4,6 @@
   gather_facts: false
   vars_files:
     - ../vars_files/credentials.yml
-  vars:
-    - system_attributes:
-        ServerOS.1.HostName: demohostname
+    - ../vars_files/attributes.yml
   roles:
     - dellemc.openmanage.idrac_attributes
