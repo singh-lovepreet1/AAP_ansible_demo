@@ -1,7 +1,7 @@
 share_parameters:
-  share_name: "{{ share_name }}"
-  share_user: "{{ share_username }}"
-  share_password: "{{ share_password }}"
+  share_name: "{{ share_name_aap }}"
+  share_user: "{{ share_user_aap }}"
+  share_password: "{{ share_password_aap }}"
   scp_file: "{{ share_filename }}"
   proxy_support: false
   proxy_server: ""
