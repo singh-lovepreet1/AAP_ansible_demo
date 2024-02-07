@@ -6,7 +6,7 @@ maintenance_window:
   start_time: "2022-09-30T05:15:40-05:00"
   duration: 1200
 disks:
-  id: "Disk.Bay.0:Enclosure.Internal.0-0:RAID.Integrated.1-1"
+  id: "Disk.Bay.2:Enclosure.Internal.0-0:RAID.Integrated.1-1"
   status: "online"
 volumes:
   id: "Disk.Virtual.0:RAID.Integrated.1-1"
