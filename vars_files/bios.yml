@@ -1,6 +1,5 @@
 attributes:
   BootMode: "Bios"
-  OneTimeBootMode: "Enabled"
   BootSeqRetry: "Enabled"
 apply_time: "{{ apply_time_aap }}"
 maintenance_window:
