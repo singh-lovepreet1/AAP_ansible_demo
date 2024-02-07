@@ -1,9 +1,7 @@
-state: "present"
-raid_type: "RAID1"
+state: "{{ state_aap }}"
+raid_type: "{{ raid_type_aap }}"
 name: "RAID1_VD"
-controller_id: "RAID.Integrated.1-1"
-drives:
-  - Disk.Bay.2:Enclosure.Internal.0-0:RAID.Integrated.1-1
-  - Disk.Bay.3:Enclosure.Internal.0-0:RAID.Integrated.1-1
+controller_id: "{{ controller_id_aap }}"
+drives: "{{ drives_aap }}"
 optimum_io_size_bytes: 65536
 
