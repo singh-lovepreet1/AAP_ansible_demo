@@ -1,6 +1,6 @@
 command: "generate_csr"
 certificate_type: "HTTPS"
-certificate_path: "/root/test"
+certificate_path: "/root"
 cert_params:
   common_name: "sample.domain.com"
   organization_unit: "OrgUnit"
