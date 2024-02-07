@@ -5,7 +5,6 @@ controller_id: "RAID.Integrated.1-1"
 drives:
   - Disk.Bay.2:Enclosure.Internal.0-0:RAID.Integrated.1-1
   - Disk.Bay.3:Enclosure.Internal.0-0:RAID.Integrated.1-1
-block_size_bytes: 512
 optimum_io_size_bytes: 65536
 encryption_types: NativeDriveEncryption
 encrypted: true
