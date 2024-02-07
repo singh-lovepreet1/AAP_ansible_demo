@@ -1,0 +1,13 @@
+---
+- name: Retrieve the current date and time
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Get tomorrow's date
+      ansible.builtin.command: date -d "+1 day" +'%Y-%m-%dT%H:%M:%S'
+      register: tomorrow_date
+      changed_when: false
+
+    - name: Convert tomorrow's date to string
+      ansible.builtin.set_fact:
+        date_str: "{{ tomorrow_date.stdout }}"
