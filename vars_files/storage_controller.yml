@@ -3,13 +3,13 @@ attributes:
   ControllerMode: "RAID"
 apply_time: "Immediate"
 maintenance_window:
-  start_time: "2022-09-30T05:15:40-05:00"
+  start_time: "2024-02-30T05:15:40-05:00"
   duration: 1200
 disks:
   id: "Disk.Bay.2:Enclosure.Internal.0-0:RAID.Integrated.1-1"
   status: "online"
 volumes:
-  id: "Disk.Virtual.0:RAID.Integrated.1-1"
+  id: "Disk.Virtual.1:RAID.Integrated.1-1"
   blink: true
 reset_config: false
 set_controller_key: false
