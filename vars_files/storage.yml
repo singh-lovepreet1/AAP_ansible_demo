@@ -1,6 +1,7 @@
 state: "{{ state_aap }}"
 raid_type: "{{ raid_type_aap }}"
 name: "RAID1_VD"
+volume_id: "{{ volume_id_aap }}"
 controller_id: "{{ controller_id_aap }}"
 drives: "{{ drives_aap }}"
 optimum_io_size_bytes: 65536
