@@ -5,5 +5,8 @@
   vars_files:
     - ../vars_files/credentials.yml
     - ../vars_files/bios.yml
+  tasks:
+    - name: Include Tasks from Another Task File
+      include_tasks: ../vars_files/curr_date_time.yml
   roles:
     - dellemc.openmanage.idrac_bios
