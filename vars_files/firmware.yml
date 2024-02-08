@@ -1,15 +1,15 @@
 # Role idrac_firmware Vars
 share_name: "{{ share_name_aap }}"
-catalog_file_name: "{{ catalog_filename_aap }}"
+catalog_file_name: "Catalog.xml"
 reboot: true
 job_wait: true
 apply_update: true
-proxy_support: "{{ proxy_support_aap }}"
-proxy_server: "{{ proxy_server_aap }}"
+proxy_support: "Off"
+proxy_server: "{{ proxy_params.server }}"
 proxy_type: HTTP
-proxy_port: "{{ proxy_port_aap }}"
-proxy_uname: "{{ proxy_username_aap }}"
-proxy_passwd: "{{ proxy_pwd_aap }}"
+proxy_port: "{{ proxy_params.port }}"
+proxy_uname: "{{ proxy_params.username }}"
+proxy_passwd: "{{ proxy_params.password }}"
 
 # Role redfish_firmware Vars
 image_uri: "{{ repo_url }}/firmware_repo/component.exe"
