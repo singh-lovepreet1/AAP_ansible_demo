@@ -1,6 +1,6 @@
 ---
 - name: Firmware update using DUP file
-  hosts: idrac
+  hosts: idrac_131
   gather_facts: false
   vars_files:
     - ../vars_files/credentials.yml
