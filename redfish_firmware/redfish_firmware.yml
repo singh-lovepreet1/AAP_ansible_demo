@@ -4,5 +4,8 @@
   gather_facts: false
   vars_files:
     - ../vars_files/credentials.yml
+  vars:
+    - image_uri: "{{ repo_url }}"
+    - transfer_protocol: "{{ transfer_protocol }}"
   roles:
     - dellemc.openmanage.redfish_firmware
