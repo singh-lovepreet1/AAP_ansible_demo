@@ -12,5 +12,5 @@ proxy_uname: "{{ proxy_params.username }}"
 proxy_passwd: "{{ proxy_params.password }}"
 
 # Role redfish_firmware Vars
-image_uri: "{{ repo_url }}/firmware_repo/component.exe"
-transfer_protocol: "HTTP"
+image_uri: "{{ repo_url }}"
+transfer_protocol: "{{ transfer_protocol }}"
