@@ -4,6 +4,7 @@
   gather_facts: false
   vars_files:
     - ../vars_files/credentials.yml
+    - ../vars_files/firmwares.yml
   vars:
     hostname: "{{ inventory_hostname }}"
   roles:
