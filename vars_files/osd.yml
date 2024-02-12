@@ -11,7 +11,7 @@ destination:
   protocol: "{{ dest_protocol }}"
   iso_path: "{{ dest_iso_path }}"
   hostname: "{{ dest_hostname }}"
-  iso_name: "{{ dest_iso_name_aap }}"
+  # iso_name: "{{ dest_iso_name_aap }}"
   mountpoint: "{{ mount_point_aap }}"
   os_type: "linux"
   username: "{{ dest_username }}"
