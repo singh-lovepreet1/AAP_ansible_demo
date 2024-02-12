@@ -20,5 +20,6 @@ wait_for_os_deployment: true
 os_deployment_timeout: 10
 eject_iso: true
 delete_custom_iso: true
+esxi_rootpw: "{{ esxi_root_pwd }}"
 ssh_user: "{{ ssh_username }}"
 ssh_pass: "{{ ssh_password }}"
