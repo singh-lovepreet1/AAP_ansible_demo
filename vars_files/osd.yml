@@ -21,5 +21,5 @@ os_deployment_timeout: 10
 eject_iso: true
 delete_custom_iso: true
 esxi_rootpw: "{{ esxi_root_pwd }}"
-ssh_user: "{{ ssh_username }}"
-ssh_pass: "{{ ssh_password }}"
+ansible_ssh_user: "{{ ssh_username }}"
+ansible_ssh_pass: "{{ ssh_password }}"
