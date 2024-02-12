@@ -1,14 +1,24 @@
-os_name: RHEL
-os_version: 9
+os_name: "{{ os_name_aap }}"
+os_version: "{{ os_version_aap }}"
 source_iso:
-  path: "{{ repo_url }}/iso/Rhel-9.iso"
-  username: "username"
-  password: "password"
+  protocol: "{{ src_protocol }}"
+  iso_path: "{{ src_iso_path }}"
+  hostname: "{{ src_hostname }}"
+  iso_name: "{{ source_iso_path_aap }}"
+  username: "{{ src_username }}"
+  password: "{{ src_password }}"
 destination_path:
-  path: "{{ repo_url }}/iso"
-  username: "username"
-  password: "password"
-http_path: "/www/http/repo"
-dest_os: "linux"
-ssh_user: "ssh_username"
-ssh_pass: "ssh_password"
+  protocol: "{{ dest_protocol }}"
+  iso_path: "{{ dest_iso_path }}"
+  hostname: "{{ dest_hostname }}"
+  iso_name: "{{ source_iso_path_aap }}"
+  mountpoint: "{{ mount_point_aap }}"
+  os_type: "linux"
+  username: "{{ dest_username }}"
+  password: "{{ dest_password }}"
+wait_for_os_deployment: true
+os_deployment_timeout: 10
+eject_iso: true
+delete_custom_iso: true
+ssh_user: "{{ ssh_username }}"
+ssh_pass: "{{ ssh_password }}"
