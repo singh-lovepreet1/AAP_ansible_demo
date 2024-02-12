@@ -1,13 +1,13 @@
 os_name: "{{ os_name_aap }}"
 os_version: "{{ os_version_aap }}"
-source_iso:
+source:
   protocol: "{{ src_protocol }}"
   iso_path: "{{ src_iso_path }}"
   hostname: "{{ src_hostname }}"
   iso_name: "{{ src_iso_name_aap }}"
   username: "{{ src_username }}"
   password: "{{ src_password }}"
-destination_path:
+destination:
   protocol: "{{ dest_protocol }}"
   iso_path: "{{ dest_iso_path }}"
   hostname: "{{ dest_hostname }}"
