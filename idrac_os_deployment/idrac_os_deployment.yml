@@ -2,6 +2,7 @@
 - name: Operating System Deployment in iDRAC
   hosts: idrac
   gather_facts: false
+  become: true
   vars_files:
     - ../vars_files/credentials.yml
     - ../vars_files/osd.yml
