@@ -13,7 +13,7 @@ destination:
   hostname: "{{ dest_hostname }}"
   # iso_name: "{{ dest_iso_name_aap }}"
   mountpoint: "{{ mount_point_aap }}"
-  os_type: "linux"
+  os_type: "windows"
   username: "{{ dest_username }}"
   password: "{{ dest_password }}"
 wait_for_os_deployment: true
