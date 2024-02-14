@@ -5,17 +5,17 @@ source:
   iso_path: "{{ src_iso_path }}"
   hostname: "{{ src_hostname }}"
   iso_name: "{{ src_iso_name_aap }}"
-  username: "{{ src_username }}"
-  password: "{{ src_password }}"
+  # username: "{{ src_username }}"
+  # password: "{{ src_password }}"
 destination:
   protocol: "{{ dest_protocol }}"
   iso_path: "{{ dest_iso_path }}"
   hostname: "{{ dest_hostname }}"
   # iso_name: "{{ dest_iso_name_aap }}"
   mountpoint: "{{ mount_point_aap }}"
-  os_type: "windows"
-  username: "{{ dest_username }}"
-  password: "{{ dest_password }}"
+  os_type: "linux"
+  # username: "{{ dest_username }}"
+  # password: "{{ dest_password }}"
 wait_for_os_deployment: true
 os_deployment_timeout: 10
 eject_iso: true
